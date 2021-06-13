@@ -2,6 +2,13 @@
 
 智慧一卡通 Python
 
+## Installation
+
+```sh
+git clone https://github.com/52funny/ecard_python && cd ecard_python
+python3 setup.py install
+```
+
 ## Demo
 
 - 获取电费
