@@ -91,8 +91,9 @@ class Ecard:
         data = {"itemNum": 1, "areano": areaNo,
                 "buildingno": buildingNo, 'roomno': roomNo}
         header = {"X-Requested-With": "XMLHttpRequest"}
+        data = json.dumps(data).replace(" ", "")
         r = self.session.post(
-            url, data={"data": json.dumps(data)}, headers=header)
+            url, data={"data": data}, headers=header)
         obj = json.loads(r.text)
         if self.debug:
             print(obj)

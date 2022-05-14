@@ -23,7 +23,7 @@ python3 setup.py install
   ```python
   e = ecard.Ecard(username, password, url)
   e.Login()
-  e.ObtainDormitoryElectricity('0', '5', '237')
+  e.ObtainDormitoryElectricity('1', '5', '237')
   ```
 - 获取今天的消费记录
 
